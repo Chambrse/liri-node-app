@@ -1,0 +1,29 @@
+{
+  "name": "liri-node-app",
+  "version": "1.0.0",
+  "description": "Practice with node package manager and exports and require functions",
+  "main": "index.js",
+  "scripts": {
+    "test": "1 = 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chambrse/liri-node-app.git"
+  },
+  "keywords": [
+    "siri",
+    "node"
+  ],
+  "author": "Shane Chambry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chambrse/liri-node-app/issues"
+  },
+  "homepage": "https://github.com/Chambrse/liri-node-app#readme",
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "node-spotify-api": "^1.0.7",
+    "request": "^2.87.0",
+    "twitter": "^1.7.1"
+  }
+}
