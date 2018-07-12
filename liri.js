@@ -53,7 +53,11 @@ function liriSwitch(args) {
             readInstructions();
 
             break;
+        case 'clear-log':
 
+            fs.writeFileSync("log.txt", "");
+
+            break;
         default:
             break;
     };
