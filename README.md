@@ -2,14 +2,14 @@
 In this assignment, you will make LIRI. LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and Recognition Interface, LIRI is a _Language_ Interpretation and Recognition Interface. LIRI will be a command line node app that takes in parameters and gives you back data.
 
 ##Command line arguments:
-node liri.js my-tweets
-    Logs your most recent tweets to the console using the twitter API
-`node liri.js spotify-this-song "song title"`
-    Uses the spotify API to search for and log information about the song to the console.
-`node liri.js movie-this "movie title"`
-    Uses the research node module and the OMDB API to search for a movie and log its info to the console.
-`node liri.js do-what-it-says`
-    reads commands from the random.txt file and runs them as normal
+`node liri.js my-tweets`\
+    Logs your most recent tweets to the console using the twitter API\
+`node liri.js spotify-this-song "song title"`\
+    Uses the spotify API to search for and log information about the song to the console.\
+`node liri.js movie-this "movie title"`\
+    Uses the research node module and the OMDB API to search for a movie and log its info to the console.\
+`node liri.js do-what-it-says`\
+    reads commands from the random.txt file and runs them as normal\
 
 
 ## Authentication:
