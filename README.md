@@ -36,4 +36,4 @@ TWITTER_ACCESS_TOKEN_SECRET=<your twitter access token secret>
 ## Gif Tour
 This gif goes quickly over the main functionality of this app with some example cases.
 
-<img src="https://i.imgur.com/WoTdvX9.gif" height="600"/>
+<img src="Liri_Demo.gif"/>
