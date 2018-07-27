@@ -5,14 +5,14 @@ In this assignment, you will make LIRI. LIRI is like iPhone's SIRI. However, whi
 Shane Chambry
 
 ## Command line arguments:  
-`node liri.js my-tweets`\
-    Logs your most recent tweets to the console using the twitter API\
-`node liri.js spotify-this-song "song title"`\
-    Uses the spotify API to search for and log information about the song to the console.\
-`node liri.js movie-this "movie title"`\
-    Uses the research node module and the OMDB API to search for a movie and log its info to the console.\
-`node liri.js do-what-it-says`\
-    reads commands from the random.txt file and runs them as normal\
+```node liri.js my-tweets```
+    Logs your most recent tweets to the console using the twitter API
+```node liri.js spotify-this-song "song title"```
+    Uses the spotify API to search for and log information about the song to the console.
+```node liri.js movie-this "movie title"```
+    Uses the research node module and the OMDB API to search for a movie and log its info to the console.
+```node liri.js do-what-it-says```
+    reads commands from the random.txt file and runs them as normal.
 
 
 ## Authentication:
@@ -32,3 +32,8 @@ TWITTER_CONSUMER_SECRET=<your twitter consumer secret>
 TWITTER_ACCESS_TOKEN_KEY=<your twitter access token key>
 TWITTER_ACCESS_TOKEN_SECRET=<your twitter access token secret>
 ```
+
+### Gif Tour
+This gif goes quickly over the main functionality of this app with some example cases.
+
+<img src="https://i.imgur.com/WoTdvX9.gif"/>
