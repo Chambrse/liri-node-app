@@ -19,47 +19,54 @@ let args = process.argv.slice(2);
 liriSwitch(args);
 
 function liriSwitch(args) {
-    switch (args[0]) {
-        case 'my-tweets':
 
-            fs.appendFileSync("log.txt", "###" + args + "\n");
+    if (args.length > 0) {
 
-            getTweets();
-            break;
-        case 'spotify-this-song':
+        switch (args[0]) {
+            case 'my-tweets':
 
-            fs.appendFileSync("log.txt", "###" + args + "\n");
+                fs.appendFileSync("log.txt", "###" + args + "\n");
 
-            if (args[1]) {
-                spotifySearch(args[1]);
-            } else {
-                spotifySearch("The sign");
-            };
-            break;
-        case 'movie-this':
+                getTweets();
+                break;
+            case 'spotify-this-song':
 
-            fs.appendFileSync("log.txt", "###" + args + "\n");
+                fs.appendFileSync("log.txt", "###" + args + "\n");
 
-            if (args[1]) {
-                getMovie(args[1]);
-            } else {
-                getMovie("Mr. Nobody");
-            };
-            break;
-        case 'do-what-it-says':
+                if (args[1]) {
+                    spotifySearch(args[1]);
+                } else {
+                    spotifySearch("The sign");
+                };
+                break;
+            case 'movie-this':
 
-            fs.appendFileSync("log.txt", "###" + args + "\n");
+                fs.appendFileSync("log.txt", "###" + args + "\n");
 
-            readInstructions();
+                if (args[1]) {
+                    getMovie(args[1]);
+                } else {
+                    getMovie("Mr. Nobody");
+                };
+                break;
+            case 'do-what-it-says':
 
-            break;
-        case 'clear-log':
+                fs.appendFileSync("log.txt", "###" + args + "\n");
 
-            fs.writeFileSync("log.txt", "");
+                readInstructions();
 
-            break;
-        default:
-            break;
+                break;
+            case 'clear-log':
+
+                fs.writeFileSync("log.txt", "");
+
+                break;
+            default:
+                console.log("Not a valid argument.");
+                break;
+        };
+    } else {
+        console.log("No arguments.");
     };
 };
 
@@ -177,7 +184,7 @@ function readInstructions() {
 
     let argsArray = [];
 
-    fs.readFile("random.txt", "utf8", function (err, body) {
+    fs.readFile("instructions.txt", "utf8", function (err, body) {
         let commands = body.split("\r\n");
 
         for (var j = 0; j < commands.length; j++) {
